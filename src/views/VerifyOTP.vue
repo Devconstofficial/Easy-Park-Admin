@@ -17,7 +17,7 @@ function redirectToForgetPassword() {
 </script>
 
 <template>
-  <div class="flex h-screen bg-gray-100">
+  <div class="flex h-screen bg-white-100">
     <!-- Left Section -->
     <div class="flex flex-col w-1/2 px-12 py-10">
       <!-- Logo & Title (Fixed at the Top) -->
@@ -36,7 +36,7 @@ function redirectToForgetPassword() {
       <div class="flex flex-col items-center justify-center flex-grow">
         <div class="w-full max-w-sm">
           <!-- Left-aligned Title & Subtitle -->
-          <h2 class="text-[40px] font-bold text-[#7C77F6] leading-[60px] tracking-[1%] text-left">
+          <h2 class="text-[40px] font-bold text-black leading-[60px] tracking-[1%] text-left">
             Verify OTP
           </h2>
           <p class="text-[#A4A9B2] text-[16px] mb-6 font-normal leading-[19.2px] tracking-[0%] text-left">

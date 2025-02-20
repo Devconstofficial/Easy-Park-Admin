@@ -25,7 +25,7 @@ const users = ref<User[]>([...Array(10).keys()].map(() => ({ ...testUser })))
 
 const cards = ref([
   { label: 'Total Users', value: '8,282', color: '#7C77F6' },
-  { label: 'Revenue This Month', value: '200,521', color: '#454197' }
+  { label: 'Revenue This Month', value: '$ 200,521', color: '#454197' }
 ])
 </script>
 

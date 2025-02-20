@@ -19,7 +19,7 @@ const pageTitle = computed(() => {
     case 'Dashboard':
       return 'Dashboard'
     case 'Users':
-      return 'User Management'
+      return 'User'
     case 'Bookings':
       return 'Bookings'
     default:
@@ -61,7 +61,7 @@ document.addEventListener('click', closeDropdown)
       </button>
 
       <!-- Dynamic Page Title -->
-      <h1 class="text-3xl font-medium text-gray-700 ml-4">{{ pageTitle }}</h1>
+      <h1 class="text-3xl font-medium text-[#3D3B73] ml-4">{{ pageTitle }}</h1>
     </div>
 
     <div class="flex items-center relative">

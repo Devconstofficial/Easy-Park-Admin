@@ -82,7 +82,7 @@ const chartOptions = {
             title: {
                 display: true,
                 text: "Revenue Amount", // Y-Axis Title
-                color: "#2D3748", // Darker text color
+                color: "#A6A8B1", // Darker text color
                 font: { size: 14, weight: "bold" },
                 padding: { top: 10, bottom: 10 }, // Adds spacing
             },

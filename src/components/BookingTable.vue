@@ -12,7 +12,7 @@
                         stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </span> <!-- Filter Icon -->
-            <span class="font-medium">Filter By</span>
+            <span class="font-medium px-3 py-1 border-l border-gray-300">Filter By</span>
 
             <!-- Dropdown: Booking Status -->
             <div class="relative dropdown-container">
@@ -153,3 +153,15 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+input[type="checkbox"]:checked {
+    background-color: red;
+    border-color: red;
+}
+
+input[type="checkbox"]:focus {
+    border-color: red;
+    box-shadow: 0 0 0 3px rgba(255, 0, 0, 0.5);
+}
+</style>

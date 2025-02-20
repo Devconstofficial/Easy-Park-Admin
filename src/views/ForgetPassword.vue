@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { useRouter } from "vue-router";
+import closeCircleIcon from '../assets/close-circle.svg';
 
 const router = useRouter();
 const email = ref("");
@@ -26,7 +27,7 @@ function clearEmail() {
               d="M30.642 0C19.4167 0 10.2845 9.07649 10.2845 20.2334V34.521V40.4667V56H22.2503V40.4667H30.642C41.8678 40.4667 51 31.3902 51 20.2334C51 9.07649 41.8678 0 30.642 0ZM30.642 28.5744C35.2696 28.5744 39.0347 24.8327 39.0347 20.2334C39.0347 15.6345 35.2696 11.8924 30.642 11.8924C26.015 11.8924 22.2503 15.6345 22.2503 20.2334V28.5744H30.642ZM0 34.6651C0 37.9488 2.67839 40.6113 5.98266 40.6113H10.2842V28.7184H5.98266C2.67839 28.7184 0 31.381 0 34.6651ZM30.6087 22.3907C31.8259 22.3907 32.8125 21.41 32.8125 20.2003C32.8125 18.9905 31.8259 18.0099 30.6087 18.0099C29.3916 18.0099 28.4049 18.9905 28.4049 20.2003C28.4049 21.41 29.3916 22.3907 30.6087 22.3907Z"
               fill="#7C77F6" />
           </svg>
-          <span class="text-3xl font-semibold text-gray-800">Park</span>
+          <span class="text-3xl font-semibold text-[#3D3B73]">Park</span>
         </div>
       </div>
 
@@ -50,7 +51,7 @@ function clearEmail() {
                   class="block w-full mt-1 border-gray-300 rounded-md focus:border-indigo-600 focus:ring focus:ring-opacity-40 focus:ring-indigo-500 pr-10" />
                 <button v-if="email" type="button" @click="clearEmail"
                   class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-500 hover:text-gray-700">
-                  ✕
+                  <img :src="closeCircleIcon" alt="Clear" class="w-5 h-5 cursor-pointer">
                 </button>
               </div>
             </label>

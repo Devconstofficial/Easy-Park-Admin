@@ -60,17 +60,15 @@ const selectCar = (index: number) => {
     <!-- Registered Cars -->
     <h3 class="text-lg font-semibold mb-2">Registered Cars</h3>
     <div class="grid grid-cols-3 gap-3">
-      <div 
-        v-for="(car, index) in user.cars" 
-        :key="car.plate" 
-        @click="selectCar(index)"
-        class="p-2 rounded-lg text-center cursor-pointer transition-colors"
-        :class="selectedIndex === index ? 'bg-[#7C77F6] text-white' : 'bg-gray-100 text-black'"
-      >
-        <img :src="car.image" alt="Car Image" class="w-full h-20 object-cover rounded-md mb-2" />
+      <div v-for="(car, index) in user.cars" :key="car.plate" @click="selectCar(index)"
+        class="p-2 rounded-[20px] max-w-[120px] text-center cursor-pointer transition-colors"
+        :class="selectedIndex === index ? 'bg-[#7C77F6] text-white' : 'bg-gray-100 text-black'">
+        <img :src="car.image" alt="Car Image" class="w-full h-20 ml-[-17px] object-cover rounded-md mb-2" />
         <p class="font-semibold">{{ car.name }}</p>
         <p :class="selectedIndex === index ? 'text-white' : 'text-gray-500'">{{ car.plate }}</p>
       </div>
+
+
     </div>
 
   </VueFinalModal>

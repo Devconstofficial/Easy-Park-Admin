@@ -12,7 +12,7 @@
                         stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </span> <!-- Filter Icon -->
-            <span class="font-medium">Filter By</span>
+            <span class="font-medium px-3 py-1 border-l border-gray-300">Filter By</span>
 
             <!-- Dropdown 1: User Name -->
             <div class="relative dropdown-container">
@@ -65,7 +65,7 @@
 
         <!-- Registered Users Heading -->
         <div class="mb-4">
-            <h1 class="text-2xl font-bold text-gray-800 border-gray-300 pb-2">Registered Users</h1>
+            <h1 class="text-2xl font-bold text-[#3D3B73] border-gray-300 pb-2">Registered Users</h1>
         </div>
 
         <!-- Table Wrapper -->
@@ -88,7 +88,7 @@
                         <td class="p-2">{{ user.phone }}</td>
                         <td class="p-2">
                             <span
-                                :class="{ 'bg-red-200 text-[#DD0747] font-bold px-2 py-1 rounded': user.status === 'Deactivated', 'bg-blue-100 text-[#7C77F6] font-bold px-2 py-1 rounded': user.status === 'Active' }">
+                                :class="{ 'bg-red-200 text-[#DD0747] font-bold px-2 py-1 rounded': user.status === 'Deactivated', 'bg-blue-200 text-[#7C77F6] font-bold px-2 py-1 rounded': user.status === 'Active' }">
                                 {{ user.status }}
                             </span>
                         </td>
